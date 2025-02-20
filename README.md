@@ -1,61 +1,104 @@
-# Signal Android
 
-Signal is a simple, powerful, and secure messenger.
+# 🚀 Drilun - Mensajería Segura y Privada
 
-Signal uses your phone's data connection (WiFi/3G/4G/5G) to communicate securely. Millions of people use Signal every day for free and instantaneous communication anywhere in the world. Send and receive high-fidelity messages, participate in HD voice/video calls, and explore a growing set of new features that help you stay connected. Signal’s advanced privacy-preserving technology is always enabled, so you can focus on sharing the moments that matter with the people who matter to you.
+**Drilun** es una aplicación de mensajería avanzada que garantiza la privacidad y seguridad en la comunicación mediante el protocolo de cifrado de extremo a extremo de Signal. Este proyecto proporciona un entorno de comunicación confiable y protegido para usuarios en todo el mundo.
 
-Currently available on the Play Store and [signal.org](https://signal.org/android/apk/).
+---
 
-<a href='https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
+## 🔐 Protocolo de Cifrado
 
-## Contributing Bug reports
-We use GitHub for bug tracking. Please search the existing issues for your bug and create a new one if the issue is not yet tracked!
+Drilun implementa el **Protocolo Signal**, reconocido por su alto nivel de seguridad y privacidad. Utiliza la librería **libsignal** para garantizar que los mensajes, llamadas y transferencias de archivos permanezcan protegidos en todo momento.
 
-https://github.com/signalapp/Signal-Android/issues
+**Características clave del cifrado:**
+- Cifrado de extremo a extremo para mensajes y llamadas.
+- Generación dinámica de claves para cada sesión.
+- Protección contra ataques de interceptación y repetición.
+- Verificación de identidad mediante claves públicas.
 
-## Joining the Beta
-Want to live life on the bleeding edge and help out with testing?
+---
 
-You can subscribe to Signal Android Beta releases here:
-https://play.google.com/apps/testing/org.thoughtcrime.securesms
+## ⚙️ Requisitos del Sistema
 
-If you're interested in a life of peace and tranquility, stick with the standard releases.
+Este proyecto es compatible con las siguientes plataformas:
 
-## Contributing Code
+- **Servidor:** Signal-Server en entornos basados en Linux.  
+- **Clientes:** Android, iOS y escritorio (Windows, macOS y Linux).  
+- **Base de datos:** PostgreSQL para la gestión de usuarios y sesiones.  
 
-If you're new to the Signal codebase, we recommend going through our issues and picking out a simple bug to fix in order to get yourself familiar. Also please have a look at the [CONTRIBUTING.md](https://github.com/signalapp/Signal-Android/blob/main/CONTRIBUTING.md), that might answer some of your questions.
+---
 
-For larger changes and feature ideas, we ask that you propose it on the [unofficial Community Forum](https://community.signalusers.org) for a high-level discussion with the wider community before implementation.
+## 📦 Estructura del Proyecto
 
-## Contributing Ideas
-Have something you want to say about Signal projects or want to be part of the conversation? Get involved in the [community forum](https://community.signalusers.org).
+El ecosistema de Drilun se basa en varios componentes clave:
 
-Help
-====
-## Support
-For troubleshooting and questions, please visit our support center!
+- **Signal-Server:** Servidor principal para el intercambio de mensajes.  
+- **Signal-Android:** Aplicación móvil para dispositivos Android.  
+- **Signal-iOS:** Aplicación móvil para dispositivos iOS.  
+- **Signal-Desktop:** Aplicación de escritorio multiplataforma.  
+- **Libsignal:** Librería criptográfica para el cifrado de extremo a extremo.  
 
-https://support.signal.org/
+---
 
-## Documentation
-Looking for documentation? Check out the wiki!
+## 📝 Instalación y Configuración
 
-https://github.com/signalapp/Signal-Android/wiki
+Sigue estos pasos para configurar tu entorno de desarrollo:
 
-# Legal things
-## Cryptography Notice
+1. **Clonar el Repositorio:**  
+```bash
+git clone https://github.com/tu-repositorio/Drilun.git
+```
 
-This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
-BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
-See <http://www.wassenaar.org/> for more information.
+2. **Instalar Dependencias:**  
+```bash
+cd Drilun
+./gradlew build
+```
 
-The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms.
-The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.
+3. **Configurar Variables de Entorno:**  
+Asegúrate de configurar las variables necesarias en el archivo `.env` o `application.yml`.
 
-## License
+4. **Ejecutar el Servidor:**  
+```bash
+./gradlew run
+```
 
-Copyright 2013-2024 Signal Messenger, LLC
+---
 
-Licensed under the GNU AGPLv3: https://www.gnu.org/licenses/agpl-3.0.html
+## 📜 Licencia
 
-Google Play and the Google Play logo are trademarks of Google LLC.
+Este proyecto se distribuye bajo la **Licencia Pública General de GNU versión 3 (GPLv3)**.  
+Puedes consultar la licencia completa en el archivo `LICENSE` incluido en este repositorio.  
+
+El código original pertenece a la **Signal Foundation**. Este proyecto utiliza componentes proporcionados por dicha fundación conforme a los términos de la GPLv3.  
+
+👉 **Más información sobre la licencia:** [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html)
+
+---
+
+## 🤝 Reconocimientos y Créditos
+
+Este proyecto no sería posible sin el increíble trabajo de la **Signal Foundation** y su protocolo de cifrado.  
+
+- Protocolo de cifrado: [Signal Protocol](https://signal.org/docs/)  
+- Librería criptográfica: [libsignal](https://github.com/signalapp/libsignal)  
+- Aplicaciones cliente y servidor: [Signal GitHub](https://github.com/signalapp)  
+
+---
+
+## 🚀 Desarrollado por
+
+Este proyecto es desarrollado y mantenido por el equipo de **Drilun**, comprometido con la privacidad y la seguridad digital.  
+
+Para consultas y soporte técnico, visita:  
+🌐 **[www.drilun.com](https://www.drilun.com)**  
+
+---
+
+## 🌐 Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas colaborar, envía un Pull Request o abre un Issue en este repositorio.  
+Asegúrate de seguir las **buenas prácticas de desarrollo** y respetar la **licencia GPLv3**.
+
+---
+
+💙 **Gracias por confiar en Drilun para tu comunicación segura.**
